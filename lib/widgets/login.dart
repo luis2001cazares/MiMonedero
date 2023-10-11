@@ -22,28 +22,40 @@ class _LoginWidgetState extends State<LoginWidget> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'Aquí va la imagen del usuario',
-              style: TextStyle(fontSize: 20),
+              'Inicia sesión en MiMonedero para administrar tu dinero de forma segura y conveniente.',
+              style: TextStyle(fontSize: 20, color: Colors.blueGrey),
+            ),
+            const SizedBox(height: 20),
+            Image.asset(
+              'assets/user_image.png',
+              width: 100,
+              height: 100,
             ),
             const SizedBox(height: 20),
             TextField(
               controller: _emailController,
               decoration: InputDecoration(
-                labelText: 'Enter Email',
+                labelText: 'Correo electrónico',
                 icon: const Icon(Icons.email),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
               ),
             ),
             const SizedBox(height: 20),
             TextField(
               controller: _passwordController,
               decoration: InputDecoration(
-                labelText: 'Enter Password',
+                labelText: 'Contraseña',
                 icon: const Icon(Icons.password),
                 suffixIcon: IconButton(
                   icon: const Icon(Icons.visibility),
                   onPressed: () {
                     // Mostrar o ocultar la contraseña
                   },
+                ),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
               obscureText: true,
@@ -54,7 +66,7 @@ class _LoginWidgetState extends State<LoginWidget> {
               onPressed: () {
                 // Iniciar sesión
               },
-              child: const Text('Log in'),
+              child: const Text('Iniciar sesión'),
             ),
           ],
         ),
@@ -75,6 +87,12 @@ class Button extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       child: child,
+      style: ElevatedButton.styleFrom(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
+      ),
     );
   }
 }
+
