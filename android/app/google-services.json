@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "57402908404",
+    "project_id": "mimonedero-e1c0a",
+    "storage_bucket": "mimonedero-e1c0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57402908404:android:a45f092d1ce8ca71ba08a1",
+        "android_client_info": {
+          "package_name": "com.example.mi_monedero"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKZ5l7ovxysRQie5os-sW_VLyfHIIvM1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
